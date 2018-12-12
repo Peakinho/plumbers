@@ -3,7 +3,7 @@ html{
     padding: 0;
 }
 body {
-  font-family: fantasy, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 12pt;
   background-color: #efefef;
   padding: 0;
@@ -36,6 +36,9 @@ h1 {
   border: 4px dashed black;
   border-radius: 10px;
 }
+.menu {
+  background-color: #87CEEB;
+}
 .middle-section {
   display: table;
   width: 100%;
@@ -47,22 +50,99 @@ h1 {
 .middle-section div {
   display: table-cell;
   width: 50%;
+  padding: 5px;
 }
 .left-side {
   background-color: #eaeaea;
 }
-.right-side {
-  background-color: #333;
+.left-side h1 {
+  background-color: #696969;
 }
+
+.slide {
+  text-align: center;
+  content: url(images/bath5.jpg);
+  animation: slide 8s;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+ @keyframes slide {
+  0% {content: url("images/bath5.jpg")}
+  25% {content: url("images/bath6.jpg")}
+  50% {content: url("images/bath7.jpg")}
+  75% {content: url("images/bath8.jpg")}
+  100%{content: url("images/bath6.jpg")}
+}
+
+.left-side article {
+  content: url("images/bath6.jpg");
+  width: 100%;
+  height: auto;
+  repeat: no-repeat;
+  opacity: 0.7;
+
+}
+.right-side ul {
+  padding top: 10px;
+}
+.right-side {
+  background-color: #696969;
+}
+.right-side ul{
+  padding: 0px;
+  list-style-type: none;
+}
+/*
+.article-header {
+  background-color: #eaeaea;
+  color: #696969;
+  border: 1px solid black;
+}
+*/
 .middle-section li {
   width: auto;
+  margin: 5px;
   height: 100px;
   padding: 10px;
   background-color: #808080;
+}
+.animate {
+  animation: animate 4s;
+  animation-iteration-count: infinite;
+}
+@keyFrames animate {
+  0% {background-color: #B0C4DE}
+  25% {background-color: #add8e6}
+  50% {background-color: #b0e0e6}
+  100% {background-color: #87ceeb}
 }
 .right-side img {
   float: right;
   height: 100%;
   width: auto;
+  padding: 2px;
+  border: 2px solid black;
+}
+#contact h1{
+  background-color: #87CEEB;
+}
+#contact td {
+  width: 50px;
+  height: 50px;
+}
+#contact img {
+  width: 100%;
+  height: auto;
+}
+#contact table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.copyright {
+  text-align: center;
+  color: grey;
   padding: 5px;
 }
