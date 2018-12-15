@@ -14,12 +14,11 @@ h1 {
   text-align: center;
 }
 .section {
-  width: 100%;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
   background-color: #fff;
-
+  text-align: center;
 }
 #header {
   background-image: url("images/bg-img.jpg");
@@ -38,6 +37,20 @@ h1 {
 }
 .menu {
   background-color: #87CEEB;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  text-align: center;
+}
+.menu ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 600px) {
+  .menu li {
+    display: block
+  }
 }
 .middle-section {
   display: table;
@@ -47,13 +60,28 @@ h1 {
   padding: 10px;
   background-color: #fff;
 }
+
 .middle-section div {
   display: table-cell;
   width: 50%;
   padding: 5px;
 }
+.middle-section img {
+  width: 50%;
+  padding: 5px;
+}
+@media (max-width: 1000px){
+
+  .middle-section div {
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .left-side {
   background-color: #eaeaea;
+  padding: 10px !important;
 }
 .left-side h1 {
   background-color: #696969;
@@ -65,9 +93,8 @@ h1 {
   animation: slide 8s;
   animation-iteration-count: infinite;
   background-repeat: no-repeat;
-  padding: 10px;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 500px;
 }
  @keyframes slide {
   0% {content: url("images/bath5.jpg")}
@@ -80,10 +107,16 @@ h1 {
 .left-side article {
   content: url("images/bath6.jpg");
   width: 100%;
-  height: auto;
+  height: 600px;
   repeat: no-repeat;
   opacity: 0.7;
-
+  max-height: 350px;
+}
+@media (max-width: 400px){
+  .left-side article {
+    width: 100%;
+    height: 250px;
+  }
 }
 .right-side ul {
   padding top: 10px;
@@ -145,4 +178,54 @@ h1 {
   text-align: center;
   color: grey;
   padding: 5px;
+}
+/* about */
+
+.card {
+  background-color: #808080;
+  margin-left: auto;
+  margin-right: auto;
+}
+#about-main {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+#about-main .card {
+  width: 50%;
+  float: left;
+}
+.section h2 {
+  background-color: #87CEEB;
+}
+@media (max-width: 1000px) {
+  #about-main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+  }
+  #about-main .card {
+    width: auto;
+  }
+}
+.section-contact {
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+background-color: #fff;
+text-align: center;
+}
+
+.section-contact ul {
+  list-style: none;
+}
+.section-contact li img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+.social img {
+  width: 40px;
+  height: 40px;
 }
