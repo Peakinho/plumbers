@@ -20,6 +20,14 @@ h1 {
   background-color: #fff;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .section p {
+    padding: 10px;
+  }
+  .section img {
+    width: 100%;
+  }
+}
 #header {
   background-image: url("images/bg-img.jpg");
   text-align: center;
@@ -46,6 +54,7 @@ h1 {
 .menu ul {
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
 }
 @media (max-width: 600px) {
   .menu li {
@@ -54,7 +63,7 @@ h1 {
 }
 .middle-section {
   display: table;
-  width: 100%;
+  width: -webkit-fill-available;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
@@ -106,11 +115,17 @@ h1 {
 
 .left-side article {
   content: url("images/bath6.jpg");
-  width: 100%;
-  height: 600px;
   repeat: no-repeat;
   opacity: 0.7;
   max-height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media (max-width: 1000px){
+  .left-side article {
+    width: 100%;
+  }
 }
 @media (max-width: 400px){
   .left-side article {
@@ -142,6 +157,11 @@ h1 {
   padding: 10px;
   background-color: #808080;
 }
+@media (max-width: 600px){
+  .middle-section li {
+    height: auto;
+  }
+}
 .animate {
   animation: animate 4s;
   animation-iteration-count: infinite;
@@ -152,12 +172,23 @@ h1 {
   50% {background-color: #b0e0e6}
   100% {background-color: #87ceeb}
 }
+@media (nax-width: 450px){
+  .right-side li {
+    display: block;
+  }
+}
 .right-side img {
   float: right;
   height: 100%;
   width: auto;
   padding: 2px;
   border: 2px solid black;
+}
+@media (max-width: 600px) {
+  .right-side img {
+    float: none;
+    width: 100%;
+  }
 }
 #contact h1{
   background-color: #87CEEB;
