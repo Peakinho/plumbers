@@ -250,6 +250,7 @@ text-align: center;
 
 .section-contact ul {
   list-style: none;
+  padding: 0px;
 }
 .section-contact li img {
   width: 80px;
